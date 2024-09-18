@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, lazy, Suspense } from 'react'
+import "../src/App.css"
+import Nav from '../src/Component/Nav'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './Utils/Store'
+import Modal from './Component/Modal'
 
-function App() {
+const Home = lazy(() => import('./Page/Home'));
+const Coin = lazy(() => import('./Page/Coin'));
+
+const App = () => {
+  const [modal, setModal] = useState(false);
+  const openmodal = () => {
+    setModal(true);
+    document.body.classList.add('active-modal');
+  }
+  const closemodal = () => {
+    setModal(false);
+    document.body.classList.remove('active-modal');
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <div className='w-screen h-screen bg-[#14161a]'>
+        <Router>
+          <Nav openmodal={openmodal} />
+          <Routes>
+            <Route exact path="/" element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Home />
+              </Suspense>
+            }></Route>
+            <Route exact path="/coins/:id" element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Coin />
+              </Suspense>
+            }></Route>
+          </Routes>
+        </Router>
+        {modal && <Modal openmodal={openmodal} closemodal={closemodal} modal={modal} />}
+      </div>
+    </Provider>
+  )
 }
+export default App
 
-export default App;

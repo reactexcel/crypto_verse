@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Cryptoverse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description 
+- An interactive platform displaying trending cryptocurrencies, top 100 coin charts, and detailed chart patterns for individual coins.
 
-## Available Scripts
+## Live Project
+https://cryptoverse-steel.vercel.app/
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+#### Install command
+- npm i --legacy-peer-deps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Build Command
+- npm run build
+ 
+## Built With
+- [React JS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Coin-gecko API](https://www.coingecko.com/en/api)
+- [Chart JS](https://reactchartjs.github.io/react-chartjs-2/#/)
+- [Redux](https://redux.js.org/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- It displays Past Performance Display of any Crypto Coin
+- You can add coins in your Wishlist after login
+- It displays Top 100 crypto-coins by their market cap
+- It displays Top Trending coins in last 24h
+- Google and Mail Authentication available
+- It provides Powerful and Elegant UI interface of the Web App. 
 
-### `npm test`
+## Learnings From the Project
+- Got Practical knowlege while Working with APIs
+- Learnt about React.js 
+- Learnt Redux and how to integrate React and Redux
+- Got Practical exposure to Tailwind css.
+- Increase in skill of styling a page and making it responsive.
+- Time Management and Resource Management.
+- Also learnt how to use a new library from scratch as i used libraries like React alice carousel, Redux, React icons etc
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+#### Homepage
+![image](https://user-images.githubusercontent.com/78155393/227704336-9f8d89a5-4e18-4e66-9772-311fdcedd880.png)
+#### Coinpage
+![image](https://user-images.githubusercontent.com/78155393/227704313-b9134990-7be2-41df-936e-49e02faa02cd.png)
